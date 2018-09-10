@@ -1,0 +1,36 @@
+<html>
+<head>
+</head>
+<body>
+
+<script>
+
+var pizza = {
+  veg: ["mushrooms", "onions", "basil", "broccoli", "potato"],
+  square: false,
+  hexagon: false,
+  price: 20,
+  slices: 8
+}
+function randoPizza() {
+  var topp = [];
+  
+  var num = prompt("How many vegetables?");
+  if ((num < 0) or (num > pizza.veg.length) {
+    document.getElementById('showresults').innerHTML = "Not a valid amount of vegetables.";
+  }
+  else {
+    for (var i = 0; i < num; i++) {
+      var rVeg = Math.floor(Math.random() * pizza.veg.length);
+      topp.push(pizza.veg[rVeg]);
+    }
+  }
+  
+  document.getElementById('showresults').innerHTML = "You are eating a " +  + "pizza.";
+}
+
+</script>
+<button onclick="randoPizza()">Random Pizza</button>
+<p id="showResults"></p>
+</body>
+</html>
