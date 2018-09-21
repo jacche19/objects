@@ -1,0 +1,56 @@
+<html>
+<head>
+  <style>
+    #yellowBox {
+      width: 45vw;
+      background-color: yellow;
+      float: left;
+      padding: 10px;
+      font-size: 20px;
+    }
+    #showYellowName{
+      font-weight: bold;
+    }
+    #redBox {
+      width: 45vw;
+      background-color: red;
+      float: right;
+      padding: 10px;
+      font-size: 20px;
+    }
+    #showRedName{
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<h1 id=title>Curry Menu</h1>
+
+<div id="cont">
+
+<div id="yellowBox">
+  <p id="showYellowName"></p>
+  <p id="showYellowVegMeat"></p>
+  <p id="showYellowSpice"></p>
+  <p id="showYellowPrice"></p>
+  <button onclick="yPrice()">Buy Yellow Curry</button>
+  <h3 id="finalY"></h3>
+</div>
+
+<div id="redBox">
+  <p id="showRedName"></p>
+  <p id="showRedVegMeat"></p>
+  <p id="showRedSpice"></p>
+  <p id="showRedPrice"></p>
+  <button onclick="rPrice()">Buy Red Curry</button>
+  <h3 id="finalR"></h3>
+</div>
+
+<script src="curry.js"></script>
+
+</div>
+
+</body>
+
+</html>
